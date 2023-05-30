@@ -14,8 +14,7 @@
 - make container as NSPersistantContainer(name: "Name of CoreData-Model")
 - create an initializer, providing an error message if anything goes wrong
 
-´´´
-Swift
+```Swift
 import CoreData
 import Foundation
 
@@ -30,19 +29,19 @@ class DataController: ObservableObject {
     }
   }
 }
-´´´
+```
 
 3. Create an instance of hte DataComntroller and make it available in SwiftUI
 - go to AppNameApp.swift
 - add property
 
-´´´Swift
+```Swift
 @StateObject private var dataController = DataController()
-´´´
+```
 
 - add an environment-modifier to the Content-View Window Group
 
-´´´Swift
+```Swift
 import SwiftUI
 
 @main
@@ -56,7 +55,7 @@ struct TrainingPlanApp: App {
         }
     }
 }
-´´´
+```
 
 Tip: If you’re using Xcode’s SwiftUI previews, you should also inject a managed object context into your preview struct for ContentView.
 
