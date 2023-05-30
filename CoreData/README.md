@@ -3,8 +3,9 @@
 
 ### 1. Create CoreData model
 - create new file (CoreData model)
-- add Entity
-- add Attributes with data types
+- name it like the app (AppName)
+- add Entity (uppercased, singular, e.g. Event)
+- add Attributes with data types (camelCased, e.g. startLocation)
 - mark what is not optional
 
 ### 2. Create Data Controller
@@ -19,7 +20,7 @@ import CoreData
 import Foundation
 
 class DataController: ObservableObject {
-  let container = NSPersistentContainer(name: "Bookworm")
+  let container = NSPersistentContainer(name: "AppName")
 
   init() {
     container.loadPersistentStores { description, error in
@@ -31,7 +32,7 @@ class DataController: ObservableObject {
 }
 ```
 
-### 3. Create an instance of hte DataComntroller and make it available in SwiftUI
+### 3. Create an instance of the DataController and make it available in SwiftUI
 - go to AppNameApp.swift
 - add property
 
@@ -45,7 +46,7 @@ class DataController: ObservableObject {
 import SwiftUI
 
 @main
-struct TrainingPlanApp: App {
+struct AppNameApp: App {
     @State private var dataController = DataController()
     
     var body: some Scene {
