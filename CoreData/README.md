@@ -2,7 +2,7 @@
 ## Setting up the CoreData stack
 
 ### 1. Create CoreData model
-- create new file (CoreData model)
+- create new file (CoreData model, Data Model)
 - name it like the app (AppName)
 - add Entity (uppercased, singular, e.g. Event)
 - add Attributes with data types (camelCased, e.g. startLocation)
