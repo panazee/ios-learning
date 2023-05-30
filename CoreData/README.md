@@ -1,13 +1,13 @@
 # CoreData
 ## Setting up the CoreData stack
 
-1. Create CoreData model
+### 1. Create CoreData model
 - create new file (CoreData model)
 - add Entity
 - add Attributes with data types
 - mark what is not optional
 
-2. Create Data Controller
+### 2. Create Data Controller
 - create new file (Swift)
 - add import CoreData on top
 - create class DataController, conforming to ObservableObject
@@ -31,7 +31,7 @@ class DataController: ObservableObject {
 }
 ```
 
-3. Create an instance of hte DataComntroller and make it available in SwiftUI
+### 3. Create an instance of hte DataComntroller and make it available in SwiftUI
 - go to AppNameApp.swift
 - add property
 
