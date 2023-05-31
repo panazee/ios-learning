@@ -10,6 +10,11 @@
 
 ![inter-relation of the objects of the CoreData stack](images/figure-core-data-stack-1.jpg)
 
+### Managed Object Model
+Every Core Data application has a data model, a file in the application bundle that describes the data of the application. The managed object model, an instance of the NSManagedObjectModel class, loads the data model and exposes it to the Core Data stack.
+
+![Managed Object Model and data model](images/figure-core-data-stack-2.jpg)
+
 ### 1. Create CoreData model
 - create new file (CoreData model, Data Model)
 - name it like the app (AppName)
