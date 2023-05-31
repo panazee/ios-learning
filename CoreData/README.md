@@ -25,7 +25,10 @@ As I mentioned earlier, the managed object context is the object of the Core Dat
 Even though most applications have one managed object model and one persistent store coordinator, it is not uncommon for applications to have multiple managed object contexts.
 
 ### Persistant Store Coordinator
+The persistent store coordinator is the glue of the Core Data stack. It keeps a reference to the managed object model and the managed object context. And, as the name implies, the persistent store coordinator is in charge of the persistent store of the application.
 
+![Persistant Store Coordinator](images/figure-core-data-stack-4.jpg)
+Even though the managed object model and the managed object context are indispensable cogs of the Core Data stack, the persistent store coordinator is the heart. It understands the data model of the application through the managed object model and it manages the persistent store of the application.
 
 ### 1. Create CoreData model
 - create new file (CoreData model, Data Model)
