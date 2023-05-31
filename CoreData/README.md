@@ -8,7 +8,7 @@
 - a managed object context
 - a persistant store coordinator
 
-
+![inter-relation of the objects of the CoreData stack](images/figure-core-data-stack-1.jpg)
 
 ### 1. Create CoreData model
 - create new file (CoreData model, Data Model)
