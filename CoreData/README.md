@@ -1,5 +1,14 @@
 # CoreData
-## Setting up the CoreData stack
+## CoreData stack
+### Things to know
+1. Every CoreData application has a CoreData stack
+2. A CoreData application is useless without a CoreData stack
+3. A Coredata stack consists of three objects:
+__* a managed object model__
+__* a managed object context__
+__* a persistant store coordinator__
+
+
 
 ### 1. Create CoreData model
 - create new file (CoreData model, Data Model)
