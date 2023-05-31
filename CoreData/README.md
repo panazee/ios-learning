@@ -3,11 +3,12 @@
 ### Things to know
 1. Every CoreData application has a CoreData stack
 2. A CoreData application is useless without a CoreData stack
-3. A Coredata stack consists of three objects:
-**- a managed object model**
-**- a managed object context**
-**- a persistant store coordinator**
-
+3. A CoreData stack consists of three objects:
+**
+- a managed object model
+- a managed object context
+- a persistant store coordinator
+**
 
 
 ### 1. Create CoreData model
