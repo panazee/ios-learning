@@ -14,6 +14,18 @@
 Every Core Data application has a data model, a file in the application bundle that describes the data of the application. The managed object model, an instance of the NSManagedObjectModel class, loads the data model and exposes it to the Core Data stack.
 
 ![Managed Object Model and data model](images/figure-core-data-stack-2.jpg)
+When the Core Data stack of the application is set up, the managed object model loads the data model from the application bundle. Even though Core Data is not a database, you can compare the data model with the schema of a database. It describes the data of the application.
+
+### Managed Object Context
+The managed object context, an instance of the NSManagedObjectContext class, is the workhorse of the Core Data stack. It is the object of the Core Data stack you, the developer, interact with most.
+The managed object context keeps a reference to the persistent store coordinator. Why that is becomes clear in a moment.
+
+![Managed Object Context](images/figure-core-data-stack-3.jpg)
+As I mentioned earlier, the managed object context is the object of the Core Data stack you interact with most. In fact, it is how you interact with the Core Data stack of the application. You rarely interact with the managed object model or the persistent store coordinator.
+Even though most applications have one managed object model and one persistent store coordinator, it is not uncommon for applications to have multiple managed object contexts.
+
+### Persistant Store Coordinator
+
 
 ### 1. Create CoreData model
 - create new file (CoreData model, Data Model)
